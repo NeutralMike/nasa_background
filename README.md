@@ -7,7 +7,7 @@
 3. ```pip install -r -requirements.txt```
 4. ```sudo apt install cron``` (cron needs to run script periodically)
 
-##Usage
+## Usage
 
 1. run ```gsettings set org.gnome.desktop.background picture-uri '$path_to_your_backround_img'``` in terminal (works for gnome)
 2. run ```crontab -e```
