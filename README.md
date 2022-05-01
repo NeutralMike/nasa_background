@@ -1,5 +1,7 @@
 # nasa_background
 
+Daily backgrounds from nasa api. Beautiful and interesting images every day by python script.
+
 ## Installation
 
 1. get api_key from nasa (https://api.nasa.gov/)
