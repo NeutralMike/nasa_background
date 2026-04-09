@@ -17,5 +17,5 @@ if img_url is None:
     exit()
 
 urllib.request.urlretrieve(img_url, img_path)
-
+print(f"{datetime.now():%Y-%m-%d %H:%M:%S} INFO Success")
 
