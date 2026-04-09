@@ -13,7 +13,7 @@ Daily backgrounds from nasa api. Beautiful and interesting images every day by p
 
 1. run ```gsettings set org.gnome.desktop.background picture-uri '$path_to_your_backround_img'``` in terminal (works for gnome)
 2. run ```crontab -e```
-3. add ```0 0 * * * /usr/bin/python $path_to_script``` to cron
+3. add ```0 0 * * * /usr/bin/python $path_to_script``` to cron. (add '''>> /home/{user}/logs/cron_nasa.log 2>&1''' to log output)
 
 
 
