@@ -11,10 +11,27 @@ Daily backgrounds from nasa api. Beautiful and interesting images every day by p
 
 ## Usage
 
-1. run ```gsettings set org.gnome.desktop.background picture-uri '$path_to_your_backround_img'``` in terminal (works for gnome)
-2. run ```crontab -e```
-3. add ```0 0 * * * /usr/bin/python $path_to_script``` to cron. (add ```>> /home/{user}/logs/cron_nasa.log 2>&1``` to log output)
+Depending on OS, just replacing the original image could be enough to update the actual background.
 
+#### Gnome: 
+
+run ```gsettings set org.gnome.desktop.background picture-uri '$path_to_your_backround_img'``` in terminal. To make background update when original image is replaced.
+
+### To make it update daily:
+
+#### Anacron
+
+With anacron, you can set cron job to run the script at midnight, and even if your system was off at the time, the script will run at the startup later that day.
+
+- run ```crontab -e```
+- add ```0 0 * * * /usr/bin/python {PATH_TO_SCRIPT}``` to cron. (add ```>> /home/{YOUR_USERNAME}/logs/cron_nasa.log 2>&1``` to log output)
+
+
+#### Using systemd
+
+put updated `nasa_back.service` and `nasa_back.timer` into `/home/{YOUR_USERNAME}/.config/systemd/user/`
+
+- also has retry policy
 
 
 ![background1](readme_images/background1.jpg)

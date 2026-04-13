@@ -1,0 +1,12 @@
+[Unit]
+Description=Change background with a new nasa image
+
+[Service]
+Type=oneshot
+WorkingDirectory={SCRIPT_DIRECOTRY}
+ExecStart=/usr/bin/python3 {PATH_TO_SCRIPT}
+
+Restart=on-failure
+RestartSec=30
+StartLimitIntervalSec=10min
+StartLimitBurst=5
