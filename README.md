@@ -9,6 +9,8 @@ Daily backgrounds from nasa api. Beautiful and interesting images every day by p
 3. ```pip install -r -requirements.txt```
 4. ```sudo apt install cron``` (cron needs to run script periodically)
 
+
+
 ## Usage
 
 Depending on OS, just replacing the original image could be enough to update the actual background.
